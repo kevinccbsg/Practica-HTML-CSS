@@ -1,0 +1,44 @@
+/* ----------------CODIGO DE CONFIGURACIÓN DEL CAROUSEL---------------------------- */
+
+
+.carousel-links {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dot{
+    margin: 5px;
+    background:-webkit-radial-gradient(red, rgb(44, 1, 1));
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: block;
+}
+
+.carousel-slides > div {
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    color: var(--main-primary-fontcolor);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.carousel-slides {
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.carousel-slides img{
+    height: 100%;
+    display: flex;
+}
+

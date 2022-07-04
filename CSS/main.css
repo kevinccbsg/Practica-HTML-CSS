@@ -8,7 +8,9 @@
     flex-direction: column;
   }
 
-  .contacto{
+  
+
+  .cuerpo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +24,7 @@
 
   .marco{    
     width: 100%;
-    border: 1px solid #3e7092;
+    border: 1px solid #ffffff;
     background: #65a9d7;   
     background: -webkit-linear-gradient(top, #c6c8c9, #1213138a);
     border-radius: 8px;
@@ -30,17 +32,18 @@
   }
   
   .legend{
-    color: #ccc;
+    padding: 3px;
+    color: #fff;
     border: 1px solid #3e7092;
     background: #65a9d7;
-    background: -webkit-linear-gradient(top, #6d65d7, #9d3e5e);
+    background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
     border-radius: 8px;
   }
   
   .checkB{
-    color: #ccc;
+    color: #fff;
     border: 1px solid #3e7092;
-    background: -webkit-linear-gradient(top, #6d65d7, #9d3e5e);
+    background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
     border-radius: 8px;
     font-size: 18px;
   }

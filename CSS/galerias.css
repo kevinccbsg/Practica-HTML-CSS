@@ -8,7 +8,7 @@
 
 .carousel-dot{
     margin: 5px;
-    background:-webkit-radial-gradient(red, rgb(44, 1, 1));
+    background:-webkit-radial-gradient(#4a9bd1, #142b3a);
     width: 16px;
     height: 16px;
     border-radius: 50%;

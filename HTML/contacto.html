@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/navBar.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <section class="nav1">
+            <div class="container-logo">
+                <img src="../Imagenes/foto 3.jpg" alt="Foto">
+                
+            </div>
+            <ul class="nav1">
+                <li><a class="app-title" href="./index.HTML">🏠Inicio</a></li>
+                <li><a class="app-title" href="./galeria.HTML">🖼️ Proyectos</a></li>
+                <li><a class="app-title" href="./contacto.HTML">📠 Contactanos</a></li>
+            </ul>
+        </section>
+        <section class="nav2">
+            <div class="container-logo">
+                <img src="../Imagenes/foto 3.jpg" alt="Foto">
+                
+            </div>
+            <aside class="sidebar">
+                <details>
+                    <summary>=📠=</summary>
+                    <ul class="menu-phone">
+                        <li><a class="app-title-li" href="./index.HTML">  🏠 Inicio</a></li>
+                        <li><a class="app-title-li" href="./galeria.HTML"> 🖼️ Proyectos</a></li>
+                        <li><a class="app-title-li" href="./contacto.HTML">📠 Contactanos</a></li>
+                    </ul>
+                </details>
+            </aside>
+        </section>
+
+    </nav>
+    <main class="contacto">
+        <h1>📘Contactanos📖</h1>
+        <form action="/register" class="cont" name="formulario" method="post">
+            <fieldset  class="marco">
+                <legend  class="legend">Datos Personales </legend>
+                <fieldset class="marco2">
+                    <div>
+                        <label for="nombre" class="lbForm" >Nombre: </label>
+                        <input type="text" name="nombre" class="inForm" id="nombre" placeholder="Nombre" required/>
+                    </div>
+                    <div>
+                        <label for="apellidos" class="lbForm" >Apellidos:</label>
+                        <input type="text" name="apellidos" class="inForm" id="apellidos" placeholder="Apellidos" required/>
+                    </div>
+                    <hr/>
+                    <div class="telefono">
+                        <label for="telefono" class="lbForm" >Telefono:</label>
+                        <select class="inFormCod" name="codigo pais" id="codigopais">
+                            <option value="nada">Código país</option>
+                            <option value="E">+34 España</option>
+                            <option value="F">+33 Francia</option>
+                            <option value="I">+39 Italia</option>
+                        </select>
+                        <input type="text" id="telefono" name="telefono" pattern="[0-9]+" maxlength="9" class="inForm" placeholder="999999999" required>
+                    </div>
+                    <div>
+                    <label for="Github" class="lbForm" >Github:</label>
+                    <input type="text" name="Github" pattern="^@[^\s]+" placeholder="@githubAccount" class="inForm" id="Github" required>
+                    </div>
+                </fieldset>               
+            </fieldset>
+            <fieldset class="marco" >
+                <legend class="legend">Descripción</legend>
+                <textarea name="sugerencias" rows="8" maxlength="180" cols="26" placeholder="Comentanos tu interes" required></textarea>
+            </fieldset>
+            <div >
+                <span class="checkB">Acepte las politicas de privacidad ---></span> <input type="checkbox" required>
+                <input class="button" type="submit" name="enviar" value="Enviar" />
+                <input class="button" type="reset" name="reset" value="Borrar" />
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

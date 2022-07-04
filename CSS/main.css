@@ -1,0 +1,94 @@
+.cont{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  summary{
+    text-align: center;
+  }
+
+  .marco{    
+    width: 100%;
+    border: 1px solid #3e7092;
+    background: #65a9d7;   
+    background: -webkit-linear-gradient(top, #c6c8c9, #1213138a);
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .legend{
+    color: #ccc;
+    border: 1px solid #3e7092;
+    background: #65a9d7;
+    background: -webkit-linear-gradient(top, #6d65d7, #9d3e5e);
+    border-radius: 8px;
+  }
+  
+  .checkB{
+    color: #ccc;
+    border: 1px solid #3e7092;
+    background: -webkit-linear-gradient(top, #6d65d7, #9d3e5e);
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  
+  .inForm{
+    max-width: 250px;
+    margin: 0px;
+    
+    display: block;
+    border-radius: 8px;
+    
+    height: 40px;
+    width: 100%;
+  }
+
+  .inFormCod{
+    margin: 0px;
+    display: block;
+    border-radius: 8px;
+    height: 25px;
+    width: 45%;
+    max-width: 100px;
+  }
+  
+
+  .button {
+    margin-top: 15px;
+    margin-left: 50px;
+    border: 1px solid #96d1f8;
+    background: #65a9d7;   
+    background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
+    padding: 5px 10px;
+    border-radius: 8px;    
+    color: white;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    }
+ .button:hover {
+    border-top-color: #28497a;
+    border: 1px solid #28497a;
+    background: #28497a;
+    color: #ccc;
+    }
+ .button:active {
+    border-top-color: #1b435e;
+    border: 1px solid #28597a;
+    background: #1b435e;
+    }

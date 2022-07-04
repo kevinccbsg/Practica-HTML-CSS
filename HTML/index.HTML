@@ -8,32 +8,77 @@
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/navBar.css">
-    <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/galerias.css">
+    <link rel="stylesheet" href="../CSS/carouselcheck.css">
 </head>
 <body>
-    <nav class="navbar main-bg">
-        <div class="container-logo">
-            <img src="https://i.imgur.com/XVW2PEZ.jpg" alt="Foto">
-            <blockquote class="imgur-embed-pub" lang="en" data-id="a/XVW2PEZ" data-context="false" ><a href="//imgur.com/a/XVW2PEZ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-        </div>
-        <a class="app-title" href="./index.HTML">Inicio</a>
-        <a class="app-title" href="./galeria.HTML">Galería de Proyectos</a>
+    <nav class="navbar">
+        <section class="nav1">
+            <div class="container-logo">
+                <img src="../Imagenes/foto 3.jpg" alt="Foto">
+                
+            </div>
+            <ul class="nav1">
+                <li><a class="app-title" href="./index.HTML">🏠Inicio</a></li>
+                <li><a class="app-title" href="./galeria.HTML">🖼️ Proyectos</a></li>
+                <li><a class="app-title" href="./contacto.HTML">📠 Contactanos</a></li>
+            </ul>
+        </section>
+        <section class="nav2">
+            <div class="container-logo">
+                <img src="../Imagenes/foto 3.jpg" alt="Foto">
+                
+            </div>
+            <aside class="sidebar">
+                <details>
+                    <summary>=🏠=</summary>
+                    <ul class="menu-phone">
+                        <li><a class="app-title-li" href="./index.HTML">  🏠 Inicio</a></li>
+                        <li><a class="app-title-li" href="./galeria.HTML"> 🖼️ Proyectos</a></li>
+                        <li><a class="app-title-li" href="./contacto.HTML">📠 Contactanos</a></li>
+                    </ul>
+                </details>
+            </aside>
+        </section>
+
     </nav>
-    <section class="carousel-container">
-        <div class="carousel-slides">
-            <div id="slide1">P1</div>
-            <div id="slide2">P2</div>
-            <div id="slide3">P3</div>
-            <div id="slide4">P4</div>
-        </div>
-        <div class="coruosel-links">
-            <a class="carousel-dot" href="#slide1"></a>
-            <a class="carousel-dot" href="#slide2"></a>
-            <a class="carousel-dot" href="#slide3"></a>
-            <a class="carousel-dot" href="#slide4"></a>
-        </div>
-    </section>
-    
+
+    <header>
+        <h1>Benvenido!!</h1>
+    </header>
+
+
+    <main>
+        <section class="carousel-container">
+            <div class="carousel-slides">
+                <div id="slide1"><img src="../Imagenes/P1.png" alt="P1"><p class="descritinoSlide">Proyecto concesionario</p></div>
+                <div id="slide2"><img src="../Imagenes/P1.2.png" alt="P1.2"> <p class="descritinoSlide">Proyecto concesionario</p></div>
+                <div id="slide3"><img src="../Imagenes/P2.png" alt="P2"><p class="descritinoSlide"> Proyecto Supermercado</p></div>
+                <div id="slide4"><img src="../Imagenes/P3.png" alt="P3">Proyecto MusicTank</div>
+            </div>
+            <div class="carousel-links">
+                <a class="carousel-dot" href="#slide1"></a>
+                <a class="carousel-dot" href="#slide2"></a>
+                <a class="carousel-dot" href="#slide3"></a>
+                <a class="carousel-dot" href="#slide4"></a>
+            </div>
+        </section>
+        
+        <section class="carousel">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+
+            <div id="carousel-slides">
+            <div class="item"><img src="../Imagenes/P1.png" alt="P1">Proyecto Concesionario</div>
+            <div class="item"><img src="../Imagenes/P1.2.png" alt="P1.2">Proyecto Concesionario</div>
+            <div class="item"><img src="../Imagenes/P2.png" alt="P2">Proyecto Supermercado</div>
+            <div class="item"><img src="../Imagenes/P3.png" alt="P3">Proyecto MusicTank</div>
+            <div>
+        </section>
+    </main>
 </body>
 </html>

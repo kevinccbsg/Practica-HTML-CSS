@@ -1,0 +1,107 @@
+:root {
+    --main-primary-backgroundcolor: rgb(117, 117, 117);
+    --main-primary-fontcolor: #fff; 
+}
+
+body {
+    background-color: var(--main-primary-backgroundcolor);
+}
+
+.container-logo img{
+    width: 65px;
+    border: 2px outset rgb(6, 6, 184);
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px;
+}
+
+.app-title{
+    padding: 5px;
+    text-decoration: none;
+    margin-left: 50px;
+    border: 1px solid #96d1f8;
+    background: #65a9d7;   
+    background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
+    padding: 5px 10px;
+    border-radius: 8px;    
+    color: white;
+    font-size: 14px;
+    box-shadow: 3px 3px 10px black;
+}
+
+
+.container-logo{
+    width: auto; 
+}
+
+.nav1{
+    background-color: rgb(71, 70, 70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.nav1 li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+}
+
+.nav2{
+    background-color: rgb(71, 70, 70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+
+
+details {
+    width: 150px;
+    border: 1px solid #96d1f8;
+    background: #65a9d7;   
+    background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
+    padding: 5px 10px;
+    border-radius: 8px;    
+    color: white;
+}
+
+.menu-phone li>a{
+    padding: 5px 10px;
+    border-radius: 8px;    
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    min-width: 100px;
+  }
+  .menu-phone li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+  }
+  .menu-phone >li{
+    display: flex;
+    justify-content: left;
+    text-align:center
+  }
+  .menu-phone >li>ul{
+    display: none;
+  }
+  .menu-phone >li:hover>ul {
+    display:block;
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav1{
+        display:none;
+    }
+}
+
+  @media screen and (min-width: 600px) {
+    .nav2{
+        display:none;
+    }
+}

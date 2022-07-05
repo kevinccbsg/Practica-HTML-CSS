@@ -1,12 +1,3 @@
-:root {
-    --main-primary-backgroundcolor: rgb(117, 117, 117);
-    --main-primary-fontcolor: #fff; 
-}
-
-body {
-    background-color: var(--main-primary-backgroundcolor);
-}
-
 .container-logo img{
     width: 65px;
     border: 2px outset rgb(6, 6, 184);
@@ -33,6 +24,8 @@ body {
     width: auto; 
 }
 
+
+
 .nav1{
     background-color: rgb(71, 70, 70);
     display: flex;
@@ -47,6 +40,7 @@ body {
 }
 
 .nav2{
+    width: 120%;
     background-color: rgb(71, 70, 70);
     display: flex;
     justify-content: space-between;

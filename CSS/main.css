@@ -1,3 +1,13 @@
+:root {
+  --main-primary-backgroundcolor: rgb(117, 117, 117);
+  --main-primary-fontcolor: #fff; 
+}
+
+body {
+  background-color: var(--main-primary-backgroundcolor);
+}
+
+/* -------------- ESTILOS PARA EL FORMULARIO------------------ */
 .cont{
     margin-top: 10px;
     margin-left: 10px;
@@ -6,9 +16,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-
-  
+  }  
 
   .cuerpo {
     display: flex;
@@ -95,3 +103,7 @@
     border: 1px solid #28597a;
     background: #1b435e;
     }
+
+   
+
+

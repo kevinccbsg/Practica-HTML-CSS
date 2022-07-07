@@ -27,7 +27,7 @@
         </div>
         
         <div class="nav2">
-             <details >
+            <details class="lista-detalle">
                 <summary>=🖼️=</summary>
                     <ul class="menu-phone">
                         <hr>
@@ -43,7 +43,25 @@
 
     </nav>
     <main class="cuerpo">
-        <h1>📘Contactanos📖</h1>
+        <header>
+            <figure>
+                <picture>
+                    <source 
+                        media="(min-width: 768px)"
+                        srcset="../Imagenes/imagenResponsive1.png"
+                    >
+                    <source 
+                        media="(min-width: 450px)"
+                        srcset="../Imagenes/imagenResponsive2.png"
+                    >
+                    <img
+                        src="../Imagenes/imagenResponsive3.png"
+                        alt="header-background"
+                    >
+                </picture>
+            </figure>
+            <h1>📘Contactanos📖</h1>
+        </header>
         <form action="/register" class="cont" name="formulario" method="post">
             <fieldset  class="marco">
                 <legend  class="legend">Datos Personales </legend>
@@ -68,7 +86,7 @@
                         <input type="text" id="telefono" name="telefono" pattern="[0-9]+" maxlength="9" class="inForm" placeholder="999999999" required>
                     </div>
                     <hr>
-                        <fieldset class="marco2" required>
+                        <fieldset class="marco t2" required>
                             <legend class="legend">¿Dondé me conociste?</legend>
                             <div class="radio">
                                 <input type="radio" name="RS" id="Keepcoding" value="Keepcoding" required>
@@ -100,12 +118,24 @@
             </fieldset>
             <div >
                 <span class="checkB">Acepte las politicas de privacidad ---></span> <input type="checkbox" required>
+            </div>
+            <div id="botones">
                 <input class="button" type="submit" name="enviar" value="Enviar" />
                 <input class="button" type="reset" name="reset" value="Borrar" />
             </div>
         </form>
     </main>
-
+    <footer>
+        <div>
+            <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/Twitter.png" alt="twitter logo"></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/Instagram.png" alt="instagram"></a>
+        </div>
+        <div>
+            <a href="https://es-es.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/Facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
     
     
 </body>

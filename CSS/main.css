@@ -1,11 +1,31 @@
 :root {
   --main-primary-backgroundcolor: rgb(117, 117, 117);
   --main-primary-fontcolor: #fff; 
+  --main-primary-border: 1px solid #ffffff;
 }
 
 body {
   background-color: var(--main-primary-backgroundcolor);
 }
+
+main {
+  color: var(--main-primary-fontcolor);
+}
+
+header{
+  background-image: linear-gradient(-225deg, #3b557b 20%, #3584A7 51%, #30D2BE 100%);
+  color: black!important;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 40px 0px 40px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-family: monospace;
+}
+
+
 
 /* -------------- ESTILOS PARA EL FORMULARIO------------------ */
 .cont{
@@ -45,17 +65,19 @@ body {
     margin-bottom: 15px;
   }
 
-  .marco2{    
-    width: 100%;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    margin-bottom: 15px;
+  .t2{  
+    color: #fff;  
+    background: none;
+    box-shadow: 5px 5px 15px inset black;
   }
 
   .radio{
     margin: 12px;
   }
 
+  main >form >fieldset{
+    color: #000;
+  }
   
   
   .legend{
@@ -105,14 +127,20 @@ body {
     max-width: 100px;
   }
   
+  #botones{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .button {
     margin-top: 15px;
-    margin-left: 50px;
     border: 1px solid #96d1f8;
     background: #65a9d7;   
     background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
-    padding: 5px 10px;
+    padding: 15px 20px;
     border-radius: 8px;    
     color: white;
     font-size: 14px;
@@ -126,10 +154,13 @@ body {
     border: 1px solid #28497a;
     background: #28497a;
     color: #ccc;
+    
+    box-shadow: 3px 3px 10px black, 0px 0px 25px #0397fa;
+    transition: all 0.6s linear;
     }
 
    @media screen and (min-width: 768px){
-    
+
     main>form>fieldset{
       display: grid;
       grid-template-columns: repeat(3, 1fr);

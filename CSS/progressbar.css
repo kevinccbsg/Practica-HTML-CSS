@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  margin: 10px;
+  color: #000;
 }
 
 .progressContainer1{
@@ -129,7 +129,7 @@ label {
   100% { width: 50%; }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .barcontainer .progress-bar-container {
     flex-direction: column;
   }
@@ -142,3 +142,4 @@ label {
     margin: 0px;
   }
 }
+

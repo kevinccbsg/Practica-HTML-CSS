@@ -28,7 +28,7 @@
         </div>
         
         <div class="nav2">
-             <details >
+            <details class="lista-detalle">
                 <summary>=🖼️=</summary>
                     <ul class="menu-phone">
                         <hr>
@@ -44,10 +44,29 @@
 
     </nav>
     <main class="cuerpo">
+        <header>
+            <figure>
+                <picture>
+                    <source 
+                        media="(min-width: 768px)"
+                        srcset="../Imagenes/imagenResponsive1.png"
+                    >
+                    <source 
+                        media="(min-width: 450px)"
+                        srcset="../Imagenes/imagenResponsive2.png"
+                    >
+                    <img
+                        src="../Imagenes/imagenResponsive3.png"
+                        alt="header-background"
+                    >
+                </picture>
+            </figure>
+            <h1>📱PROYECTOS📱</h1>
+        </header>
         <div class="GriderXD">
             
             <section class="search-form">
-                <h1>PROYECTOS</h1>
+                
                 <h2>Encuentra la muestra de proyecto de tu interes</h2>
                 <div class="form-group">
                 <input class="intext" type="text" id="search" name="search" placeholder="Busca un proyecto">
@@ -56,7 +75,7 @@
                 <input class="main-bg input-submit" type="submit" value="search">
             </section>
             <aside class="sidebar">
-                <details>
+                <details class="lista-detalle2">
                     <summary>Proyectos disponibles</summary>
                     <ul>
                         <li>Web1</li>
@@ -179,7 +198,17 @@
             </section>
         </div>
     </main>
-
+    <footer>
+        <div>
+            <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/Twitter.png" alt="twitter logo"></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/Instagram.png" alt="instagram"></a>
+        </div>
+        <div>
+            <a href="https://es-es.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/Facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
     
     
 </body>

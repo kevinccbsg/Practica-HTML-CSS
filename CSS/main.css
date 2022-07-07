@@ -26,6 +26,12 @@ body {
 
   }
 
+  .cuerpo >header{
+    width: 100%;
+    margin-left: 0px;
+    color: var(--main-primary-fontcolor);
+  }
+
   summary{
     text-align: center;
   }
@@ -38,6 +44,19 @@ body {
     border-radius: 8px;
     margin-bottom: 15px;
   }
+
+  .marco2{    
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .radio{
+    margin: 12px;
+  }
+
+  
   
   .legend{
     padding: 3px;
@@ -46,6 +65,16 @@ body {
     background: #65a9d7;
     background: -webkit-linear-gradient(top, #142b3a, #4a9bd1);
     border-radius: 8px;
+  }
+
+  main>form>fieldset>textarea{
+    box-shadow: 0 1px 8px #000 inset, 0 1px 10px #444;
+  }
+
+  main>form>fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .checkB{
@@ -98,12 +127,25 @@ body {
     background: #28497a;
     color: #ccc;
     }
- .button:active {
-    border-top-color: #1b435e;
-    border: 1px solid #28597a;
-    background: #1b435e;
+
+   @media screen and (min-width: 768px){
+    
+    main>form>fieldset{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-   
+    main>form>fieldset>hr{
+      display: none;
+    }
+    main>form .textbox{
+      display: flex;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    
+   }
 
 

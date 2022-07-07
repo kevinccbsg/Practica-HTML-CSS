@@ -8,34 +8,27 @@
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/navBar.css">
-    <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/galerias.css">
     <link rel="stylesheet" href="../CSS/carouselcheck.css">
-    <link rel="stylesheet" href="../CSS/progressbar.css">
+    <link rel="stylesheet" href="../CSS/progressbar.css">    
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
-    <nav class="navbar">
-        <section class="nav1">
-            <div class="container-logo">
-                <img src="../Imagenes/foto 3.jpg" alt="Foto">
-                
-            </div>
-            <ul class="nav1">
-                <li><a class="app-title" href="./index.HTML">🏠Inicio</a></li>
-                <li><a class="app-title" href="./galeria.HTML">🖼️ Proyectos</a></li>
-                <li><a class="app-title" href="./contacto.HTML">📠 Contactanos</a></li>
-            </ul>
-        </section>
+    <nav>
+        <div class="container-logo">
+            <img src="../Imagenes/foto 3.jpg" alt="Foto">
+            
+        </div>
+        <div class="nav1">
+            <span><a class="app-title" href="./index.HTML">🏠Inicio</a></span>
+            <span><a class="app-title" href="./galeria.HTML">🖼️ Proyectos</a></span>
+            <span><a class="app-title" href="./contacto.HTML">📠 Contactanos</a></span>
+        </div>
         
-        <section class="nav2">
-            <div class="container-logo">
-                <img src="../Imagenes/foto 3.jpg" alt="Foto">
-                
-            </div>
-            <aside class="sidebar">
-                <details>
-                    <summary>=🏠=</summary>
+        <div class="nav2">
+            <details >
+                <summary>=🏠=</summary>
                     <ul class="menu-phone">
                         <hr>
                         <li><a class="app-title-li" href="./index.HTML">  🏠 Inicio</a></li>
@@ -44,14 +37,13 @@
                         <hr>
                         <li><a class="app-title-li" href="./contacto.HTML">📠 Contactanos</a></li>
                     </ul>
-                </details>
-            </aside>
-        </section>
+            </details>
+        </div>
     </nav>
 
     <main class="cuerpo">
         <header>
-            <h1>Bienvenido!!</h1>
+            <h1>Angel Magallanes</h1>
         </header>
         <section class="carousel-container">
             <div class="carousel-slides">
@@ -83,25 +75,50 @@
         </section>
 
         <section class="barcontainer"> 
-            <div class="progress-bar-container">   
-                <div class="progress-bar stripes animated reverse slower">
-                  <span class="progress-bar-inner1"></span>
+            <div class="progress-bar-container">
+                <div class="progressContainer1">
+                    <label>Python</label>   
+                    <div class="progress-bar stripes animated reverse slower">
+                    <span class="progress-bar-inner1"><p>10 %</p></span>
+                    </div>
+                    <label>HTML</label>
+                    <div class="progress-bar stripes animated reverse slower">
+                    <span class="progress-bar-inner2"><p>70 %</p></span>
+                    </div>
+                    <label>JavaScript</label>
+                    <div class="progress-bar stripes animated reverse slower">
+                    <span class="progress-bar-inner3"><p>8 %</p></span>
+                    </div>
                 </div>
-                <div class="progress-bar stripes animated reverse slower">
-                  <span class="progress-bar-inner2"></span>
+                <div class="progressContainer2">
+                    <label>Photoshop</label>
+                    <div class="progress-bar stripes animated reverse slower">
+                    <span class="progress-bar-inner4"><p>65 %</p></span>
+                    </div>
+                    <label>CSS</label>
+                    <div class="progress-bar stripes animated reverse slower">
+                    <span class="progress-bar-inner5"><p>80 %</p></span>
+                    </div>
+                    <label>GIT</label>
+                    <div class="progress-bar stripes animated reverse slower">
+                    <span class="progress-bar-inner6"><p>50 %</p></span>
+                    </div>
                 </div>
-                <div class="progress-bar stripes animated reverse slower">
-                  <span class="progress-bar-inner3"></span>
-                </div>
-                <div class="progress-bar stripes animated reverse slower">
-                  <span class="progress-bar-inner4"></span>
-                </div>
-                <div class="progress-bar stripes animated reverse slower">
-                  <span class="progress-bar-inner5"></span>
-                </div>
-              </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div>
+            <a href=""><img src="../Imagenes/Twitter.png" alt="twitter logo"></a>
+        </div>
+        <div>
+            <a href=""><img src="../Imagenes/Instagram.png" alt="instagram"></a>
+        </div>
+        <div>
+            <a href=""><img src="../Imagenes/Facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
 
     
 </body>

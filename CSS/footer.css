@@ -1,0 +1,17 @@
+footer{
+    margin-top: 70px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    gap: 30px;
+}
+
+footer>div{
+    box-shadow: 5px 5px 8px #000, 7px 7px 8px #0a65af;
+    background-color: #0a65af;
+    border-radius: 22px;
+}
+
+footer>div>a>img{
+    width: 100%;
+}

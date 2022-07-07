@@ -1,114 +1,144 @@
+.barcontainer .progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 10px;
+}
+
+.progressContainer1{
+  margin: 10px;
+}
+
+.progressContainer2{
+  margin: 10px;
+}
+
 .progress-bar {
-    background-color: #1a1a1a;
-    height: 10px;
-    width: 450px;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+  background-color: #1a1a1a;
+  height: 10px;
+  width: 100vw;
+  max-width: 300px;
+  margin: 20px auto;
+  margin-top: 0px;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+  
+.progress-bar >span>p {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress-bar >label {
+  margin-bottom: 0px;
+}
+
+label {
+  color: var(--main-primary-fontcolor);
+}
+
+.stripes {
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+  
+.stripes.animated {
+  animation: animate-stripes 0.6s linear infinite;
+}
+  
+.stripes.animated.slower {
+  animation-duration: 1.25s;
+}
+  
+.stripes.reverse {
+  animation-direction: reverse;
+}
+  
+.progress-bar >span{
+  display: block;
+  height: 10px;
+  width: 0%;
+  background-color: #34c2e3;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  position: relative;
+}
+
+.progress-bar-inner1 {
+  animation: auto-progress 3s normal forwards;
+}
+  
+.progress-bar-inner2 {
+  animation: auto-progress2 3s normal forwards;
+}
+  
+.progress-bar-inner3 {
+  animation: auto-progress3 3s normal forwards;
+}
+
+.progress-bar-inner4 {
+  animation: auto-progress4 3s normal forwards;
+}
+  
+.progress-bar-inner5 {
+  animation: auto-progress5 3s normal forwards;
+}
+
+.progress-bar-inner6 {
+  animation: auto-progress6 3s normal forwards;
+}
+  
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 0;
+  }
+}
+  
+@keyframes auto-progress {
+  0% { width: 0; }
+  100% { width: 10%; }
+}
+  
+@keyframes auto-progress2 {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+  
+@keyframes auto-progress3 {
+  0% { width: 0; }
+  100% { width: 8%; }
+}
+  
+@keyframes auto-progress4 {
+  0% { width: 0; }
+  100% { width: 65%; }
+}
+  
+@keyframes auto-progress5 {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+
+@keyframes auto-progress6 {
+  0% { width: 0; }
+  100% { width: 50%; }
+}
+
+@media screen and (max-width: 450px) {
+  .barcontainer .progress-bar-container {
+    flex-direction: column;
   }
   
-  .stripes {
-    background-size: 30px 30px;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  .progressContainer1{
+    margin: 0px;
   }
   
-  .stripes.animated {
-    animation: animate-stripes 0.6s linear infinite;
+  .progressContainer2{
+    margin: 0px;
   }
-  
-  .stripes.animated.slower {
-    animation-duration: 1.25s;
-  }
-  
-  .stripes.reverse {
-    animation-direction: reverse;
-  }
-  
-  .progress-bar-inner1 {
-    display: block;
-    height: 10px;
-    width: 0%;
-    background-color: #34c2e3;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    position: relative;
-    animation: auto-progress 3s normal forwards;
-  }
-  
-  .progress-bar-inner2 {
-    display: block;
-    height: 10px;
-    width: 0%;
-    background-color: #34c2e3;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    position: relative;
-    animation: auto-progress2 3s normal forwards;
-  }
-  
-  .progress-bar-inner3 {
-    display: block;
-    height: 10px;
-    width: 0%;
-    background-color: #34c2e3;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    position: relative;
-    animation: auto-progress3 3s normal forwards;
-  }
-  
-  .progress-bar-inner4 {
-    display: block;
-    height: 10px;
-    width: 0%;
-    background-color: #34c2e3;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    position: relative;
-    animation: auto-progress4 3s normal forwards;
-  }
-  
-  .progress-bar-inner5 {
-    display: block;
-    height: 10px;
-    width: 0%;
-    background-color: #34c2e3;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    position: relative;
-    animation: auto-progress5 3s normal forwards;
-  }
-  
-  @keyframes animate-stripes {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 60px 0;
-    }
-  }
-  
-  @keyframes auto-progress {
-    0% { width: 0; }
-    100% { width: 10%; }
-  }
-  
-  @keyframes auto-progress2 {
-    0% { width: 0; }
-    100% { width: 70%; }
-  }
-  
-  @keyframes auto-progress3 {
-    0% { width: 0; }
-    100% { width: 45%; }
-  }
-  
-  @keyframes auto-progress4 {
-    0% { width: 0; }
-    100% { width: 65%; }
-  }
-  
-  @keyframes auto-progress5 {
-    0% { width: 0; }
-    100% { width: 80%; }
-  }
+}

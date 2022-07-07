@@ -13,25 +13,22 @@
 </head>
 <body>
     <nav class="navbar">
-        <section class="nav1">
-            <div class="container-logo">
-                <img src="../Imagenes/foto 3.jpg" alt="Foto">
-                
-            </div>
+        <div class="container-logo">
+            <img src="../Imagenes/foto 3.jpg" alt="Foto">
+            
+        </div>
+        
+        <div class="nav1">
             <ul class="nav1">
-                <li><a class="app-title" href="./index.HTML">🏠Inicio</a></li>
-                <li><a class="app-title" href="./galeria.HTML">🖼️ Proyectos</a></li>
-                <li><a class="app-title" href="./contacto.HTML">📠 Contactanos</a></li>
+                <span><a class="app-title" href="./index.HTML">🏠Inicio</a></span>
+                <span><a class="app-title" href="./galeria.HTML">🖼️ Proyectos</a></span>
+                <span><a class="app-title" href="./contacto.HTML">📠 Contactanos</a></span>
             </ul>
-        </section>
-        <section class="nav2">
-            <div class="container-logo">
-                <img src="../Imagenes/foto 3.jpg" alt="Foto">
-                
-            </div>
-            <aside class="sidebar">
-                <details>
-                    <summary>=📠=</summary>
+        </div>
+        
+        <div class="nav2">
+             <details >
+                <summary>=🖼️=</summary>
                     <ul class="menu-phone">
                         <hr>
                         <li><a class="app-title-li" href="./index.HTML">  🏠 Inicio</a></li>
@@ -40,9 +37,9 @@
                         <hr>
                         <li><a class="app-title-li" href="./contacto.HTML">📠 Contactanos</a></li>
                     </ul>
-                </details>
-            </aside>
-        </section>
+            </details>
+        </div>
+        
 
     </nav>
     <main class="cuerpo">
@@ -50,7 +47,7 @@
         <form action="/register" class="cont" name="formulario" method="post">
             <fieldset  class="marco">
                 <legend  class="legend">Datos Personales </legend>
-                <fieldset class="marco2">
+            
                     <div>
                         <label for="nombre" class="lbForm" >Nombre: </label>
                         <input type="text" name="nombre" class="inForm" id="nombre" placeholder="Nombre" required/>
@@ -70,13 +67,34 @@
                         </select>
                         <input type="text" id="telefono" name="telefono" pattern="[0-9]+" maxlength="9" class="inForm" placeholder="999999999" required>
                     </div>
+                    <hr>
+                        <fieldset class="marco2" required>
+                            <legend class="legend">¿Dondé me conociste?</legend>
+                            <div class="radio">
+                                <input type="radio" name="RS" id="Keepcoding" value="Keepcoding" required>
+                                <label for="Keepcoding">Keepcodin</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="RS" id="Facebook" value="Facebook">
+                                <label for="Facebook">Facebook</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="RS" id="Twitter" value="Twitter">
+                                <label for="Twitter">Twitter</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="RS" id="GitHub" value="GitHub">
+                                <label for="GitHub">GitHub</label>
+                            </div>
+                        </fieldset>
+                    <hr>
                     <div>
                     <label for="Github" class="lbForm" >Github:</label>
                     <input type="text" name="Github" pattern="^@[^\s]+" placeholder="@githubAccount" class="inForm" id="Github" required>
                     </div>
-                </fieldset>               
+                               
             </fieldset>
-            <fieldset class="marco" >
+            <fieldset class="marco textbox" >
                 <legend class="legend">Descripción</legend>
                 <textarea name="sugerencias" rows="8" maxlength="180" cols="26" placeholder="Comentanos tu interes" required></textarea>
             </fieldset>

@@ -164,16 +164,35 @@ input:nth-of-type(4):checked ~ div#carousel-slides {
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 769px) {
     .carousel-container{
         display:none;
     }
     
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 769px) {
     .carousel{
         display:none;
     }
+
+    .carousel-slides {
+        width: 60vw;
+        height: 35vh;
+    }
 }
-  
+
+
+
+@media screen and (min-width: 1240px) {
+    .carousel-slides {
+        width: 55vw;
+        height: 45vh;
+    }
+}
+@media screen and (min-width: 1450px) {
+    .carousel-slides {
+        width: 35vw;
+        height: 50vh;
+    }
+}

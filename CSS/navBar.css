@@ -3,6 +3,8 @@
     border: 2px outset rgb(6, 6, 184);
     border-radius: 50%;
     box-shadow: 1px 1px 15px;
+    justify-content: start;
+    
 }
 
 .app-title{
@@ -21,34 +23,28 @@
 
 
 .container-logo{
-    width: auto; 
+    width: auto;
+    margin-right: 40%; 
 }
 
-
-
-.nav1{
+nav{
+    width: 100%!important;
     background-color: rgb(71, 70, 70);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    position: sticky;
 }
 
-.nav1 li>a:hover{
+
+
+nav li>a:hover{
     color: #000;
     background-color: #eaeaea;
 }
 
-.nav2{
-    width: 120%;
-    background-color: rgb(71, 70, 70);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-}
-
-
+/* .navbar > div{
+    justify-content: end;
+} */
 
 details {
     width: 150px;
@@ -58,6 +54,8 @@ details {
     padding: 5px 10px;
     border-radius: 8px;    
     color: white;
+    position: absolute;
+    z-index: 1;
 }
 
 .menu-phone li>a{
@@ -71,31 +69,51 @@ details {
     align-items: center;
     text-decoration: none;
     min-width: 100px;
-  }
-  .menu-phone li>a:hover{
+}
+.menu-phone li>a:hover{
     color: #000;
     background-color: #eaeaea;
-  }
-  .menu-phone >li{
+}
+.menu-phone >li{
     display: flex;
     justify-content: left;
     text-align:center
-  }
-  .menu-phone >li>ul{
+}
+.menu-phone >li>ul{
     display: none;
-  }
-  .menu-phone >li:hover>ul {
+}
+.menu-phone >li:hover>ul {
     display:block;
-  }
+}
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .nav1{
         display:none;
     }
+    .container-logo{
+        margin-right: 50%; 
+    }
 }
 
-  @media screen and (min-width: 600px) {
+
+
+@media screen and (min-width: 550px) {
     .nav2{
         display:none;
+    }
+    .container-logo{
+        margin-right: 1%; 
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .container-logo{
+        margin-right: 20%; 
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .container-logo{
+        margin-right: 40%; 
     }
 }

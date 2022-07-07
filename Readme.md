@@ -1,7 +1,6 @@
 # PRACTICA - HTML - CSS
 
-[![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](https://github.com/VilyaTanke)
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![GitHub-Angel](./Imagenes/gitangel.png)](https://github.com/VilyaTanke)
 
 [![Gem Version](https://badge.fury.io/rb/colorls.svg)](https://badge.fury.io/rb/colorls)
 [![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)

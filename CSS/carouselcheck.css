@@ -182,8 +182,6 @@ input:nth-of-type(4):checked ~ div#carousel-slides {
     }
 }
 
-
-
 @media screen and (min-width: 1240px) {
     .carousel-slides {
         width: 55vw;
